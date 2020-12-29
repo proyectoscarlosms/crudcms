@@ -1,0 +1,50 @@
+﻿@model EJCRUD4.Models.cCuentas
+
+@{
+    var title = "BORRAR CUENTAS";
+    ViewData["Title"] = title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+    .input-validation-error {
+        border-color: red;
+    }
+</style>
+
+<div class="row justify-content-center">
+    <h4>@title</h4>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Delete">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="ID" class="control-label"></label>
+                <label class="form-control" disabled> @Html.DisplayFor(modelItem => Model.ID)</label>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <label class="form-control" disabled>@Html.DisplayFor(modelItem => Model.Description)</label>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="ID_Origen" class="control-label"></label>
+                <label class="form-control" disabled>@Html.DisplayFor(modelItem => Model.ID_Origen)</label>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Delete" class="btn btn-success" /> |
+                <a asp-action="Index" class="btn btn-info">Volver a la lista</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>

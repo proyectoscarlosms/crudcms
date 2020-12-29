@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Account\Edit - Copia.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Account\NewFolder\" />
+    <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-grid.css" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-grid.min.css" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-reboot.css" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-reboot.min.css" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap.css" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap.min.css" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.5.3" />
+    <PackageReference Include="jQuery" Version="3.3.1" />
+    <PackageReference Include="jQuery.Validation" Version="1.17.0" />
+    <PackageReference Include="jQuery.Validation.Unobtrusive" Version="2.0.20710" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
